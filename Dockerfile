@@ -9,9 +9,9 @@ FROM dependencies AS build
 WORKDIR /app
 
 # API 后端
-ENV VUE_APP_SUBCONVERTER_DEFAULT_BACKEND = "https://api.wcc.best"
+ENV VUE_APP_SUBCONVERTER_DEFAULT_BACKEND="https://api.wcc.best"
 # 短链接后端
-ENV VUE_APP_MYURLS_DEFAULT_BACKEND = "https://suo.yt"
+ENV VUE_APP_MYURLS_DEFAULT_BACKEND="https://suo.yt"
 
 COPY . /app
 RUN yarn build
